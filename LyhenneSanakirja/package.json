@@ -1,0 +1,17 @@
+{
+  "name": "huutokauppa",
+  "version": "1.0.0",
+  "scripts": {
+    "frontend": "cd lyhenne_sanakirja/frontend && npm start",
+    "backend": "cd lyhenne_sanakirja/backend && npm start",
+    "startfull": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5"
+  }
+}
